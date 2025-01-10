@@ -2,10 +2,10 @@ import React,{useState} from "react";
 const Counter=()=>{
     const [value,setValue]=useState(0)
     const handleIncrement=()=>{
-            setValue(value+1);
+            setValue((prevValue) => prevValue + 1);
     }
     const handleDecrement=()=>{
-            setValue(value-1);
+        setValue((prevValue) => prevValue - 1);
     }
 return (
     <div>
