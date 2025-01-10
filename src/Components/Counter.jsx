@@ -8,7 +8,7 @@ const Counter=()=>{
         setValue((prevValue) => prevValue - 1);
     }
 return (
-    <div>
+    <div style={{paddingLeft:"10px"}}>
         <h1>Counter App</h1>
         <p>Count: {value}</p>
         <button onClick={handleIncrement}>Increment</button>
